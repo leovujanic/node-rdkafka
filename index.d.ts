@@ -24,6 +24,8 @@ export class Client extends NodeJS.EventEmitter {
 export class KafkaConsumer extends Client {
     constructor(conf: any, topicConf: any);
 
+    isConnected(): any;
+
     assign(assignments: any): any;
 
     assignments(): any;
